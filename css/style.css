@@ -1,0 +1,167 @@
+
+/* yellow: #f9e42e;
+dark blue: #033048;
+light grey: #606161;
+almost black: #121212; */
+body {
+    /* margin: 40px; */
+    background-color: #f0efef;
+    font-family:'Open Sans' ;
+   
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .content {
+    grid-area: content;
+    position: relative;
+    font: 1.1em ;
+    font-weight: 150;
+    font:lighter;
+    color: #606161;
+  }
+  
+  .header {
+      align-content: center;
+    grid-area: header;
+    background-color:#033048 ;
+    display: inline-grid;
+  }
+
+  
+  .footer {
+    grid-area: footer;
+    background-color: #f9e42e;
+    height: 100px;
+    text-align: center;
+  }
+  .footer2{
+    grid-area: footer2;
+    height: 200px;
+    background-color: #121212;
+    text-align: center;
+  }
+  
+  .container {
+          display: grid;
+          grid-template-columns: 30% 30% 20%;
+          grid-template-areas:
+            "header  header  header"
+            "content content sidebar"
+            "footer  footer  footer"
+            "footer2  footer2  footer2";
+
+        margin:auto;
+        justify-content: center;
+          
+      }
+  
+  h1{
+      padding-top:  10px;
+      padding-left: 10%;
+      color: white;
+      font-size: 50px;
+      font-weight: 600;
+      align-items: center;
+  }
+  ul>li{
+    float: right;
+    margin-right: 20px;
+    margin-left: 10px;
+    display: inline;
+    list-style-type: disc;
+    color: #f9e42e;
+    font: 3em 600semibold;
+    padding-bottom: 20px;
+  }
+.L{
+    font-size: 50px;
+    display: inline;
+    float: left;
+}
+  .ReadMore{
+    box-align: right;
+    size:18px;
+    text-decoration: none;
+    color: #033048;
+    padding-left: 40%;
+    font:1em, extra bold;
+  }
+  p{
+   width: 50%;
+    display: block;
+    text-align: justify;
+    font: 1.1em ;
+    font-weight: 150;
+    font:lighter;
+    color: #606161;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+  h3{
+    font-size: 40px;
+    font-weight: 600;
+    font:1em;
+    color: #033048;
+  }
+  article{
+      align-content: center;
+      border-bottom:#033048 solid ;
+  }
+  button{
+    background-color: #033048;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  h5{
+    color: #f9e42e;
+    font-size: 36px;
+    font-weight: 800;
+    background-color: #121212;
+    text-align: center;
+  }
+h6{
+    text-align: center;
+    color: white;
+    background-color: #121212;
+    margin: 0pc;
+  }
+  h2{
+    font:1em, extra bold;
+    color: #033048;
+  }
+  a{
+    font:1em, light;
+    color: #033048;
+    text-decoration: none;
+    margin: 10px;
+    padding-bottom: 15px;
+  }
+  .sidebar>p{
+    font:1em, light;
+    color: #033048;
+    text-align: left;
+
+  }
+  .footer2>a{
+
+      display: inline;
+      position: center;
+  }
+p:last-child{
+    background-color: black;
+    color:white;
+    text-align: center;
+    width: 100%;
+    margin: 0pc;
+}
